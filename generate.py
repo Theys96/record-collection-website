@@ -9,4 +9,4 @@ for album in indexer.getAlbumList(BASE_DIR):
   print(album)
   audio_file = indexer.findArbitraryMusicFile(os.path.join(BASE_DIR, album))
   if (audio_file is not None):
-    decoder.retrieveAudioProperties(audio_file)
+    print( decoder.retrieveAudioProperties(audio_file) )

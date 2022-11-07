@@ -53,7 +53,3 @@ function getSortedAlbums(callback, comparisonFunction) {
     callback(data.sort(comparisonFunction));
   });
 }
-
-$(() => {
-  getAlbumsByDateTitle(renderAlbums)
-})

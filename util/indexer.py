@@ -20,3 +20,12 @@ def findArbitraryMusicFile(dir: str) -> str|None:
       if audio is not None:
         return os.path.join(dir, file)
   return None
+
+def findCoverFile(dir: str) -> str|None:
+  jpg_cover = os.path.join(dir, 'Cover.jpg')
+  png_cover = os.path.join(dir, 'Cover.png')
+  if os.path.exists(jpg_cover):
+    return jpg_cover
+  if os.path.exists(png_cover):
+    return png_cover
+  return None

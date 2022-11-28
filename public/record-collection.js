@@ -15,6 +15,9 @@ function renderAlbums(albums) {
       current_row = $('<div class=\'row\'>')
     }
   }
+  current_col = $('<div class=\'col-xl-6\'>')
+  current_col.append(current_row)
+  container.append(current_col)
   $('#container').html(container)
 }
 
